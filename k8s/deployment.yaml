@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: jump
+  name: jump
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: jump
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: jump
+    spec:
+      containers:
+        - image: ghcr.io/cwiggs/jump-take-home:main
+          name: jump-take-home
+          resources: {}
+status: {}
