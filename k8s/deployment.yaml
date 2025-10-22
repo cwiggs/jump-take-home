@@ -22,9 +22,12 @@ spec:
           name: jump-take-home
           resources: {}
           env:
-            - name: image_tag
+            - name: NODE_NAME
               valueFrom:
-                resourceFieldRef:
-                  containerName: jump-take-home
-                  resource: image
+                fieldRef:
+                  fieldPath: spec.nodeName
+            - name: POD_IP
+              valueFrom:
+                fieldRef:
+                  fieldPath: spec.podIP
 status: {}
