@@ -10,7 +10,7 @@ image_tag = os.getenv("IMAGE_TAG", "default")
 # Create a route at the root URL that returns "Hello, World"
 @app.route("/")
 def hello():
-    return "Hello World"
+    return "Hello World. I was updated with CI!"
 
 if __name__ == "__main__":
     # Run the application on all interfaces/IPs.
