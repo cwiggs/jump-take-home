@@ -1,7 +1,7 @@
 # Jump-take-home
 
 ## Requirements:
-1. [] Create a minimal server and Dockerfile.
+1. [x] Create a minimal server and Dockerfile.
 2. [] Run locally once to verify 'Hello world'
 3. [] Push to the repo; show CI building/pushing/deploying to your chosen cloud.
 4. [] Commit the text change to "Hello World. I was updated with CI!"
