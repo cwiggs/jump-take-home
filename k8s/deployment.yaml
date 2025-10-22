@@ -21,4 +21,10 @@ spec:
         - image: ghcr.io/cwiggs/jump-take-home:main
           name: jump-take-home
           resources: {}
+          env:
+            - name: image_tag
+              valueFrom:
+                resourceFieldRef:
+                  containerName: jump-take-home
+                  resource: image
 status: {}
